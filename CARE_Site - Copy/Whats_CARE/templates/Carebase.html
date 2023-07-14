@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block page_content %}
+<html>
+<head>
+   
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+</head>
+<body>
+    <style>
+    h1{
+        font-size: 3em; 
+        margin: 10;
+        padding: 0;
+        text-align: left;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        position: absolute;
+        top: 25%;
+        left: 10%;
+
+    }
+    h2{
+        font-size: 2.5em; 
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        position: absolute;
+        top: 38%;
+        left: 10%;
+    }
+
+    
+
+
+
+    
+</style>
+<h1 style ="color:rgb(255, 255, 255,1)"><font face="Georgia"> Welcome to <b>CARE</b></font></h1>
+<h2 style ="color:rgba(250, 250, 250, 0.99)"><font face="Georgia"> <i>The Emission Quantifier</i></font> </h2>
+<div class = "container1">
+    <video autoplay loop muted>
+        <source src="{% static 'video/usethis.mp4' %}" type="video/mp4">
+    </video>
+</div>
+
+
+</body>
+</html>
+{% endblock %}
